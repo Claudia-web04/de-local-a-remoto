@@ -1,0 +1,48 @@
+/*  body{
+    background-image: url("\zona.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p{
+    border-style: dashed;
+    border-color: green;
+    border-width: 20px;
+    border-radius: 20px;
+    border:dashed blue 20px;
+}
+*/
+h1,h3{ /* para diferentes parrafos */
+    background-color: blueviolet;
+    color: azure;
+}
+
+#especial{
+    background-color: rgb(252, 210, 155); /* solo esta afectando a una, al usar en la actividad su id */
+}
+
+#especial:hover{
+    background-color: rgb(4, 8, 224); /* solo esta afectando a una, al usar en la actividad su id */
+    color: black;
+}
+p:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+a{
+text-decoration: none;
+text-shadow: 2px 3px blue; /* se añade el link a tablas (se aplica ahi) */
+
+}
+
+tr{
+    background-color: brown;
+}
+
+tr:nth-child(odd){ /* odd impar */
+    background-color: aqua;
+}
+/* para que sea el fondo una imgen se puede camibar el color por la ruta de la imagen */
+/*  background-image: url("/img/entre al google soy tremendo hacer.jpg"); */

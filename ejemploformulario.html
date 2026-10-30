@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Idioma-->
+    <head>
+        <meta charset="UTF-8"  />
+        <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+        <title> Ejemplos de formularios</title>
+    </head>
+    <body>
+         <form method="post" action="#"> <!-- post enviar --> 
+            <label for="id_nombre"> Nombre de usuario</label>
+            <input type="text" name="nombre" id="id_nombre" value="Escriba aqui su nombre">
+            <br> <!--Cajita para escribir-->
+            <textarea name="dscribir" id="id_escribir" rows="20" cols="50"> valor por defecto</textarea>
+
+            <label for="id_correo"> Escribe tu correo</label>
+            <input type="email" id="id_correo" name="correo">
+            <br> <!--br es salto de linea-->
+            <label for="id_genero"> Genero:</label>
+            <br> <!--required, se debe seleciionar si o si-->
+            <input type="radio" name="genero">Masculino
+            <br>
+            <input type="radio" name="genero">Femenino
+            <br>
+            <input type="checkbox" name="coches">Renault
+            <input type="checkbox" name="coches">Ford <!--Poder seleciionar mas de una-->
+            <input type="checkbox" name="coches">Mercedes
+
+            <select name="lenguajes" id="id_lenguajes">
+                <option value="js">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="Java" selected="selected">Java </option> <!--Al reiniciar pagina empieza por este-->
+                <option value="c++">C++</option>
+                <option value="pyton">Python</option>
+            </select>
+            <input type="file" name="archivo"> tablas.html
+    <!-- shift + alt + a, te crea un comentario auto sin escribir -->
+            <button type="submit">Enviar</button>
+            <button taype="reset">Borrar</button>
+        </form>
+    </body>
+</html>
